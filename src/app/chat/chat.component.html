@@ -1,0 +1,6 @@
+<div *ngFor="let message of messages | async">
+  {{ message }}
+</div>
+
+<input [(ngModel)]="newMessage">
+<button (click)="sendMessage()">Send</button>
